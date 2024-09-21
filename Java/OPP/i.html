@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Popup Design Easy Tutorials</title>
+<link rel="stylesheet" href="index.css">
+ </head>
+ <body>
+    <div class="continee">
+        <button type="submit" class="btn">Submit</button>
+        <div class="Popup" id="Popup">
+            <img src="tick.png">
+            <h2> Thank You !</h2>
+             <p>Your betails has been successfully submitted. Thanks</p>
+             <button type="button" onclick="openPopup()">OK</button>
+
+        </div>
+    </div>
+    <script>
+        let Popup = document.getElementById("popup");
+
+        function openPopup(){
+            Popup.classList.add("open-popup");
+         }
+        function closePopup(){
+            Popup.classList.remove("open-popup");
+        }
+    </script>
+ 
+</body>
+
+ </html>
